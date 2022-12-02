@@ -1,0 +1,47 @@
+<div class="container calculadora border">
+  <section class="container border mt-3 mb-5" style="background-color: white;">
+      <p>calculo: <strong>{{pantalla}}</strong></p>
+      <p id="resultado">resultado: {{resultado}}</p>
+  </section>
+  <section class="row btns mb-3">
+      <section class="col-lg-7">
+          <section class="row altura m-1">
+              <button class="btn btn-primary col-lg-4" (click)="addN(7)">7</button>
+              <button class="btn btn-primary col-lg-4" (click)="addN(8)">8</button>
+              <button class="btn btn-primary col-lg-4" (click)="addN(9)">9</button>
+          </section>
+          <section class="row altura m-1">
+              <button class="btn btn-primary col-lg-4" (click)="addN(4)">4</button>
+              <button class="btn btn-primary col-lg-4" (click)="addN(5)">5</button>
+              <button class="btn btn-primary col-lg-4" (click)="addN(6)">6</button>
+          </section>
+          <section class="row altura m-1">
+              <button class="btn btn-primary col-lg-4" (click)="addN(1)">1</button>
+              <button class="btn btn-primary col-lg-4" (click)="addN(2)">2</button>
+              <button class="btn btn-primary col-lg-4" (click)="addN(3)">3</button>
+          </section>
+      </section>
+      <section class="col-lg-5 border">
+          <section class="container">
+              <section class="row mb-3">
+                  <button class="btn btn-primary col-lg-6" (click)="deleteAll()">C</button>
+                  <button class="btn btn-primary col-lg-6" (click)="addN('/')">/</button>
+              </section>
+              <section class="row mb-3">
+                  <button class="btn btn-primary col-lg-6" (click)="addN('x')">X</button>
+                  <button class="btn btn-primary col-lg-6" (click)="addN('-')">-</button></section>
+              <section class="row mb-3">
+                  <button class="btn btn-primary col-lg-6" (click)="addN('+')">+</button>
+                  <button class="btn btn-primary col-lg-6" (click)="calcular()">=</button>
+                  <!--    -->
+              </section>
+              <section class="row">
+                  <button class="btn btn-primary col-lg-12" (click)="addN(0)">0</button>
+              </section>
+
+
+
+          </section>
+      </section>
+  </section>
+</div>

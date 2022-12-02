@@ -1,0 +1,11 @@
+.calculadora{
+    width: 500px;
+    margin-top: 60px;
+    background-color: lightblue;
+}
+.altura{
+    height: 33%;
+}
+.btns{
+    height: 70%;
+}
